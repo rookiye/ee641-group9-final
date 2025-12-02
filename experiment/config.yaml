@@ -40,7 +40,7 @@ parameters:
   # result_dir: 
   #   value: "result"
   catalog: 
-    value: "coffee_machines" # Choices: ["election_articles", "coffee_machines", "books", "cameras"] # election articles still unsovled
+    value: "coffee_machines" # Choices: ["election_articles", "coffee_machines", "books", "cameras", "shampoo"] # election articles still unsovled
   random_order: 
     value: True 
   target_product_idx:

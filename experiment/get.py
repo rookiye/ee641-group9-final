@@ -23,6 +23,13 @@ def get_user_query(user_msg_type, catalog):
         catalog = "data/election_articles.jsonl"
         if user_msg_type == "default":
             user_msg = "I am looking for an article. Can I get some recommendations from the following articles?"
+    elif catalog == "shampoo":
+        catalog = "data/shampoo.jsonl"
+        if user_msg_type == "default":
+            user_msg = "I am looking for a shampoo. Can I get some recommendations?"
+        elif user_msg_type == "custom":
+            user_msg = "I am looking for a shampoo suitable for my hair type. Can you recommend from the following products?"
+
     else:
         raise ValueError("Invalid catalog.")
     return user_msg
