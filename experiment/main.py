@@ -90,7 +90,11 @@ def main():
     hparams = wandb.config
 
     # log all hparams
-    wandb_logger.name = get_experiment_name(search_hparams, hparams)
+    catalog = hparams.catalog              # e.g. "cameras"
+    prod_id = hparams.target_product_idx   # e.g. 1
+
+    wandb_logger.name = f"{catalog}-{prod_id}"
+
 
     user_msg = get_user_query(hparams.user_msg_type, hparams.catalog)
 

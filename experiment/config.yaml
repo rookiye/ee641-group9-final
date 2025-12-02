@@ -43,8 +43,8 @@ parameters:
     value: "coffee_machines" # Choices: ["election_articles", "coffee_machines", "books", "cameras"] # election articles still unsovled
   random_order: 
     value: True 
-  target_product_idx: 
-    value: 5
+  target_product_idx:
+    values: [1,2,3,4,5,6,7,8,9,10]
   mode: 
     value: "self" # Choices: ["self", "transfer"]
 
