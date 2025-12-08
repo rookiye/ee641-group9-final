@@ -1,0 +1,27 @@
+method: 'grid'
+name: 'gcg-baseline'
+metric:
+  name: 'eval/product_rank'
+  goal: 'minimize'
+
+parameters:
+  seed:
+    value: 9
+  model:
+    value: "meta-llama/Llama-3.1-8B-Instruct"
+  num_iter:
+    value: 500
+  top_k:
+    value: 256
+  num_samples:
+    value: 64
+  batch_size:
+    value: 4
+  num_suffix_tokens:
+    value: 30
+  test_iter:
+    value: 100
+  catalog:
+    value: "cameras"
+  target_product_idx:
+    values: [1,2,3,4,5]

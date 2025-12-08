@@ -1,0 +1,18 @@
+# Experiment Configuration
+
+catalogs:
+  - cameras
+  - shampoo
+  - coffee_machines
+
+products_per_catalog: 10
+
+random_seed: 9
+
+wandb:
+  entity: "vthiyaga-usc"
+  project: "EE641 project"
+
+models:
+  source: "meta-llama/Llama-3.1-8B-Instruct"
+  target: "meta-llama/Llama-2-7b-chat-hf"
